@@ -21,27 +21,17 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px; /* Регулирует расстояние между гербами и заголовком */
-            margin-bottom: 20px;
-        }
-        .header h2 {
-            margin: 0;
-            font-size: 20px;
-            color: #333;
             text-align: center;
+            position: relative;
         }
-        .logo {
-            width: 80px;
-            height: auto;
+        h2 {
+            color: #333;
+            font-size: 20px;
+            margin-top: 40px;
         }
         ul {
             padding-left: 20px;
+            text-align: left;
         }
         .image-container {
             text-align: center;
@@ -66,23 +56,30 @@
         .button:hover {
             background-color: #0056b3;
         }
+        .logo {
+            position: absolute;
+            width: 80px;
+            top: 10px;
+        }
+        .logo-left {
+            left: 10px;
+        }
+        .logo-right {
+            right: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <img src="Rusflag.png" alt="Rusflag" class="logo">
-            <h2>Набор в ФСО России <br> по Санкт-Петербургу</h2>
-            <img src="GerbFSO.png" alt="GerbFSO" class="logo">
-        </div>
-        
+        <img src="Rusflag.png" alt="Rusflag" class="logo logo-left">
+        <img src="GerbFSO.png" alt="GerbFSO" class="logo logo-right">
+        <h2>Набор в ФСО России по Санкт-Петербургу</h2>
         <p>В ФСО России по городу Санкт-Петербург объявлен набор кандидатов на службу по контракту.</p>
         
         <h2>Основные требования к кандидатам:</h2>
         <ul>
             <li>Гражданство Российской Федерации;</li>
             <li>Образование не ниже полного среднего (11 классов);</li>
-            <li>Среднее - профессиональное обучение;</li>
             <li>Служба в Вооруженных Силах РФ или окончание военной кафедры;</li>
             <li>Отсутствие проблем со здоровьем (категория А, Б с расшифровкой);</li>
             <li>Отсутствие судимостей;</li>
@@ -119,7 +116,7 @@
         
         <h2>Контакты</h2>
         <p>По вопросам трудоустройства пишите под этим постом или звоните:</p>
-        <p><strong><a href="tel:+79990008822">+7 911 177 52 95</a></strong></p>
+        <p><strong><a href="tel:+79990008822">+7 999 000 88 22</a></strong></p>
         
         <a href="https://forms.yandex.ru/u/641a28232530c20792efca2e/" class="button">Форма для заполнения</a>
     </div>
