@@ -14,20 +14,20 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            color: #ffffff;
+            color: white;
             text-align: center;
         }
         .container {
             max-width: 600px;
-            background-color: rgba(65, 105, 225, 0.9); /* Прозрачный васильковый */
+            background-color: #4169E1;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             position: relative;
         }
         h2 {
-            font-size: 22px;
-            margin-top: 40px;
+            font-size: 18px;
+            margin-top: 60px;
         }
         ul {
             padding-left: 20px;
@@ -39,14 +39,11 @@
         }
         .image-container img {
             width: 100%;
-            max-width: 500px;
             border-radius: 10px;
-            height: auto;
         }
         .button {
             display: block;
-            width: 90%;
-            text-align: center;
+            width: 80%;
             background-color: #007bff;
             color: white;
             padding: 10px;
@@ -60,14 +57,24 @@
         }
         .logo {
             position: absolute;
-            width: 80px;
-            top: 10px;
+            width: 60px;
+            top: 20px;
         }
         .logo-left {
             left: 10px;
         }
         .logo-right {
             right: 10px;
+        }
+        @media (max-width: 600px) {
+            .logo {
+                width: 50px;
+                top: 15px;
+            }
+            h2 {
+                font-size: 16px;
+                margin-top: 80px;
+            }
         }
     </style>
 </head>
@@ -119,7 +126,7 @@
         
         <h2>Контакты</h2>
         <p>По вопросам трудоустройства пишите под этим постом или звоните:</p>
-        <p><strong><a href="tel:+79111775295" style="color: white;">+7 911 177 52 95</a></strong></p>
+        <p><strong><a href="tel:+79111775295" style="color: white; text-decoration: none;">+7 911 177 52 95</a></strong></p>
         
         <a href="https://forms.yandex.ru/u/641a28232530c20792efca2e/" class="button">Форма для заполнения</a>
     </div>
